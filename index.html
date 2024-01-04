@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="logo.jpg">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Mr. or Ms.?</title>
+</head>
+<body>
+<div id="container">
+    <div id="form-div" class="form flex1">
+        <h2 id="title-form" class="text"> Mr. or Ms.?</h2>
+        <form id="form">
+            <label>
+                Name:
+                <input type="text" id="name" maxlength="255">
+            </label>
+            <fieldset id="radio-buttons">
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="Male" id="radioMale" checked="true">Male
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="Female" id="radioFemale">Female
+                </label>
+            </fieldset>
+            <button id="submit-button" class="form-button"> Submit</button>
+            <button id="save-button" class="form-button"> Save</button>
+        </form>
+    </div>
+    <div id="result-div flex1">
+        <section id="section-prediction">
+            <h2 id="title-prediction" class="text">Prediction <span id="load">..</span></h2>
+            <section id="section-prediction-result">
+                <p id="result-prediction" class="text"> Gender </p>
+                <p id="result-likelihood" class="text"> Likelihood </p>
+            </section>
+        </section>
+        <section id="section-save">
+            <h2 id="title-saved">Saved Answer</h2>
+            <section id="section-saved-result">
+                <p id="result-saved" class="text">Saved Gender</p>
+                <button id="clear-button"> Clear</button>
+            </section>
+        </section>
+    </div>
+    <div id="error" title="click me">
+        Error Box
+    </div>
+</div>
+</body>
+</html>
